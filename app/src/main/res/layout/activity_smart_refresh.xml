@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.found.refresh.RefreshActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_smart_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/refresh_smart_refresh" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/srl_smart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space_60"
+                android:layout_marginEnd="@dimen/space_60"
+                android:layout_marginBottom="@dimen/space_60"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btn_delivery"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="气球快递" />
+
+                <Button
+                    android:id="@+id/btn_dropbox"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="掉落盒子" />
+
+                <Button
+                    android:id="@+id/btn_bezier_radar"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="贝塞尔雷达" />
+
+                <Button
+                    android:id="@+id/btn_bezier_circle"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="弹出圆圈" />
+
+
+                <Button
+                    android:id="@+id/btn_fly"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="FlyRefresh" />
+
+                <Button
+                    android:id="@+id/btn_classics"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="经典风格" />
+
+                <Button
+                    android:id="@+id/btn_phoenix"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="金色校园" />
+
+                <Button
+                    android:id="@+id/btn_taurus"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="冲上云霄" />
+
+                <Button
+                    android:id="@+id/btn_battle_city"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="战争城市" />
+
+                <Button
+                    android:id="@+id/btn_hit_block"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="打砖块" />
+
+                <Button
+                    android:id="@+id/btn_wave_swipe"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="全屏水波" />
+
+                <Button
+                    android:id="@+id/btn_material"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="官方主题" />
+
+                <Button
+                    android:id="@+id/btn_store_house"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="StoreHouse" />
+
+                <Button
+                    android:id="@+id/btn_water_drop"
+                    style="@style/ButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_60"
+                    android:text="苹果水滴" />
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>
