@@ -35,7 +35,7 @@
     <string name="rate">评价</string>
     <string name="feedback">反馈</string>
     <string name="share">分享</string>
-    <string name="donate">赞助</string>
+    <string name="donate">捐赠</string>
 
     <!-- 登录注册 -->
     <string name="login">登录</string>
@@ -50,4 +50,10 @@
     <string name="theme_color">主题颜色</string>
     <string name="night_mode">夜间模式</string>
     <string name="language">多语言</string>
+
+    <!-- 捐赠 -->
+    <string name="app_pay">AppPay</string>
+    <string name="pay_success">支付成功</string>
+    <string name="pay_error">支付错误</string>
+    <string name="pay_cancel">用户取消</string>
 </resources>

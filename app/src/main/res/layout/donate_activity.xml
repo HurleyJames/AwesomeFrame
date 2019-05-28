@@ -4,13 +4,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".feature.found.card.CardActivity">
+    tools:context=".feature.user.donate.DonateActivity">
 
     <com.hjq.bar.TitleBar
-        android:id="@+id/tb_card"
+        android:id="@+id/tb_donate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/found_card" />
+        app:title="@string/donate" />
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -18,7 +18,7 @@
         android:layout_margin="@dimen/space_20">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_card"
+            android:id="@+id/rv_donate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </android.support.v4.widget.NestedScrollView>
