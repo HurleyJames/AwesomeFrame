@@ -53,6 +53,7 @@
 
     <!-- 捐赠 -->
     <string name="app_pay">AppPay</string>
+    <string name="rxtool_pay">RxToolPay</string>
     <string name="pay_success">支付成功</string>
     <string name="pay_error">支付错误</string>
     <string name="pay_cancel">用户取消</string>

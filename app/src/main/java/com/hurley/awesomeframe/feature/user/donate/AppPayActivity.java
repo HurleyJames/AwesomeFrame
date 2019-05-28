@@ -11,8 +11,8 @@ import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.ToastUtils;
 import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
-import com.king.pay.alipay.AliPay;
 import com.king.pay.apppay.AppPay;
+import com.king.pay.wxpay.WXPayReq;
 import com.king.pay.wxpay.wxapi.WXPayActivity;
 
 import butterknife.BindView;
@@ -75,10 +75,23 @@ public class AppPayActivity extends BaseActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_alipay:
+                // TODO 配置好支付宝支付请求相关的参数,发送支付宝支付请求，可参见：https://docs.open.alipay.com/204/105296/
+                // 支付宝支付请求的订单信息，务必放在服务端通过接口返回，这样比较安全。
+//                String orderInfo = "";
+//                mAppPay.sendAliPayReq(orderInfo);
                 break;
             case R.id.btn_wxpay:
+                // TODO 配置好微信支付请求相关的参数,发送微信支付请求，可参见：https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_5
+                // 微信请求相关属性务必放在服务端，通过预支付下单接口返回相关参数，这样比较安全。
+                WXPayReq req = new WXPayReq();
+                req.setAppId("");
+                mAppPay.sendWXPayReq(req);
                 break;
             case R.id.btn_ali_auth:
+                // ODO 支付宝授权信息privateKey等数据严禁放在客户端，加签过程务必要放在服务端完成
+                // 支付宝授权信息
+//                String authInfo = "";
+//                mAppPay.checkAliAuth(authInfo);
                 break;
             default:
                 break;
@@ -87,7 +100,7 @@ public class AppPayActivity extends BaseActivity {
 
     @Override
     protected void onDestroy() {
-        unregisterPayResultReceiver();
+//        unregisterPayResultReceiver();
         super.onDestroy();
     }
 

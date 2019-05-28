@@ -67,6 +67,17 @@ dependencies {
     // 工具
     // UtilCode包：https://github.com/Blankj/AndroidUtilCode
     implementation 'com.blankj:utilcode:1.11.1'
+    // RxTool包：https://github.com/vondear/RxTool
+    // 基础工具库
+    implementation "com.github.vondear.RxTool:RxKit:2.3.9"
+    // UI库
+    implementation "com.github.vondear.RxTool:RxUI:2.3.9"
+    // 相机库
+    implementation "com.github.vondear.RxTool:RxCamera:2.3.9"
+    // 功能库（Zxing扫描与生成二维码条形码 支付宝 微信）
+    implementation "com.github.vondear.RxTool:RxFeature:2.3.9"
+    //ArcGis For Android工具库（API：100.1以上版本）
+    implementation "com.github.vondear.RxTool:RxArcGisKit:2.3.9"
 
     // Frame
     // Android-PickerView包：https://github.com/Bigkoo/Android-PickerView

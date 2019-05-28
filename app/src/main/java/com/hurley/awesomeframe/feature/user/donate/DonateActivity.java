@@ -64,6 +64,8 @@ public class DonateActivity extends BaseActivity implements BaseQuickAdapter.OnI
             case 0:
                 startActivity(AppPayActivity.class);
                 break;
+            case 1:
+                startActivity(RxToolPayActivity.class);
             default:
                 break;
         }
@@ -71,6 +73,7 @@ public class DonateActivity extends BaseActivity implements BaseQuickAdapter.OnI
 
     private List<FrameBean> setListData(List<FrameBean> list) {
         list.add(new FrameBean("AppPay", "jenly1314", "\uD83D\uDCB8 AppPay专注于App支付的库，几句代码轻松搞定微信支付、支付宝支付。集成更简单。"));
+        list.add(new FrameBean("RxTool", "vondear", "支付宝支付 | 微信支付（统一下单）"));
         return list;
     }
 }

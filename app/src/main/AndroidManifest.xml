@@ -25,6 +25,7 @@
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
+            tools:replace="android:authorities"
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
@@ -89,5 +90,8 @@
         <activity android:name=".feature.user.donate.DonateActivity" />
 
         <activity android:name=".feature.user.donate.AppPayActivity" />
+
+        <activity android:name=".feature.user.donate.RxToolPayActivity" />
+
     </application>
 </manifest>
