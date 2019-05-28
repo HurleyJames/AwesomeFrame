@@ -35,7 +35,7 @@ public class RefreshActivity extends BaseActivity implements BaseQuickAdapter.On
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_refresh;
+        return R.layout.refresh_activity;
     }
 
     @Override
@@ -51,7 +51,7 @@ public class RefreshActivity extends BaseActivity implements BaseQuickAdapter.On
     @Override
     protected void initEventAndData() {
         mList = new ArrayList<>();
-        mAdapter = new FrameAdapter(R.layout.item_frame, mList);
+        mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
         mRvRefresh.setAdapter(mAdapter);
         mAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         mAdapter.isFirstOnly(false);

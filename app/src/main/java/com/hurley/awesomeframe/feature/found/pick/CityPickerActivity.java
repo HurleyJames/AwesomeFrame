@@ -2,7 +2,6 @@ package com.hurley.awesomeframe.feature.found.pick;
 
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
-import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 
@@ -39,7 +38,7 @@ public class CityPickerActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_city_picker;
+        return R.layout.city_picker_activity;
     }
 
     @Override

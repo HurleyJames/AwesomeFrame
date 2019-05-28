@@ -15,7 +15,7 @@ public class ListActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_list;
+        return R.layout.list_activity;
     }
 
     @Override

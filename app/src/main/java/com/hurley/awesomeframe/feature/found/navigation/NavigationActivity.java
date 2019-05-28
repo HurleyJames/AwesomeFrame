@@ -15,7 +15,7 @@ public class NavigationActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_navigation;
+        return R.layout.navigation_activity;
     }
 
     @Override

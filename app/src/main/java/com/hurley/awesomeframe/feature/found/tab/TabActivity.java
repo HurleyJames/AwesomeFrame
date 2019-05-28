@@ -14,7 +14,7 @@ import com.hurley.awesomeframe.base.activity.BaseActivity;
 public class TabActivity extends BaseActivity {
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_tab;
+        return R.layout.tab_activity;
     }
 
     @Override

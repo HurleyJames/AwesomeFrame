@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.user.setting.SettingActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/setting" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.hurley.awesomeframe.widget.SettingBar
+            android:id="@+id/sb_auto_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_leftText="@string/auto_update" >
+
+            <com.hurley.awesomeframe.widget.SwitchButton
+                android:id="@+id/btn_auto_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="@dimen/space_30"
+                android:layout_marginEnd="@dimen/space_30" />
+        </com.hurley.awesomeframe.widget.SettingBar>
+
+        <com.hurley.awesomeframe.widget.SettingBar
+            android:id="@+id/sb_auto_cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_leftText="@string/auto_cache">
+
+            <com.hurley.awesomeframe.widget.SwitchButton
+                android:id="@+id/btn_auto_cache"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="@dimen/space_30"
+                android:layout_marginEnd="@dimen/space_30" />
+        </com.hurley.awesomeframe.widget.SettingBar>
+
+        <com.hurley.awesomeframe.widget.SettingBar
+            android:id="@+id/sb_clear_cache"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_leftText="@string/clear_cache"
+            app:bar_rightText="0K" />
+
+        <com.hurley.awesomeframe.widget.SettingBar
+            android:id="@+id/sb_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30"
+            app:bar_leftText="@string/language"
+            app:bar_rightIcon="@mipmap/icon_arrow_right"
+            app:bar_rightText="跟随系统" />
+
+        <com.hurley.awesomeframe.widget.SettingBar
+            android:id="@+id/sb_night"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30"
+            app:bar_leftText="@string/night_mode">
+
+            <com.hurley.awesomeframe.widget.SwitchButton
+                android:id="@+id/btn_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="@dimen/space_30"
+                android:layout_marginEnd="@dimen/space_30" />
+        </com.hurley.awesomeframe.widget.SettingBar>
+
+        <com.hurley.awesomeframe.widget.SettingBar
+            android:id="@+id/sb_theme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:bar_leftText="@string/theme_color"
+            app:bar_rightIcon="@mipmap/icon_arrow_right" />
+    </LinearLayout>
+</LinearLayout>

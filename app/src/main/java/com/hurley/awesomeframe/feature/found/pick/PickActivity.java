@@ -34,7 +34,7 @@ public class PickActivity extends BaseActivity implements BaseQuickAdapter.OnIte
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_pick;
+        return R.layout.pick_activity;
     }
 
     @Override
@@ -50,7 +50,7 @@ public class PickActivity extends BaseActivity implements BaseQuickAdapter.OnIte
     @Override
     protected void initEventAndData() {
         mList = new ArrayList<>();
-        mAdapter = new FrameAdapter(R.layout.item_frame, mList);
+        mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
         mRvPick.setAdapter(mAdapter);
         mAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         mAdapter.isFirstOnly(false);

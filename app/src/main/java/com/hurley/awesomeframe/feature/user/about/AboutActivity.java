@@ -9,8 +9,6 @@ import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
 import com.hurley.awesomeframe.data.local.FrameBean;
 import com.hurley.awesomeframe.feature.found.adapter.FrameAdapter;
-import com.hurley.awesomeframe.feature.found.pick.CityPickerActivity;
-import com.hurley.awesomeframe.feature.found.refresh.SmartRefreshLayoutActivity;
 import com.mikepenz.aboutlibraries.Libs;
 import com.mikepenz.aboutlibraries.LibsBuilder;
 
@@ -38,7 +36,7 @@ public class AboutActivity extends BaseActivity implements BaseQuickAdapter.OnIt
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_about;
+        return R.layout.about_activity;
     }
 
     @Override
@@ -54,7 +52,7 @@ public class AboutActivity extends BaseActivity implements BaseQuickAdapter.OnIt
     @Override
     protected void initEventAndData() {
         mList = new ArrayList<>();
-        mAdapter = new FrameAdapter(R.layout.item_frame, mList);
+        mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
         mRvAbout.setAdapter(mAdapter);
         mAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         mAdapter.isFirstOnly(false);

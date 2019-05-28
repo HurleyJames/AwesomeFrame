@@ -57,7 +57,7 @@ public class FoundFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_found;
+        return R.layout.found_fragment;
     }
 
     @Override

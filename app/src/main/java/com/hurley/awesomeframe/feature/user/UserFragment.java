@@ -6,6 +6,7 @@ import android.view.View;
 import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.fragment.BaseFragment;
 import com.hurley.awesomeframe.feature.user.about.AboutActivity;
+import com.hurley.awesomeframe.feature.user.donate.DonateActivity;
 import com.hurley.awesomeframe.feature.user.setting.SettingActivity;
 import com.hurley.awesomeframe.widget.SettingBar;
 
@@ -44,7 +45,7 @@ public class UserFragment extends BaseFragment {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.fragment_user;
+        return R.layout.user_fragment;
     }
 
     @Override
@@ -84,6 +85,7 @@ public class UserFragment extends BaseFragment {
             case R.id.sb_rate:
                 break;
             case R.id.sb_donate:
+                startActivity(DonateActivity.class);
                 break;
             default:
                 break;

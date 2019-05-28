@@ -15,7 +15,7 @@ public class PopupActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_popup;
+        return R.layout.popup_activity;
     }
 
     @Override

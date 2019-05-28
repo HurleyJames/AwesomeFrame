@@ -52,7 +52,7 @@ public class AndroidPickViewActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_android_pick_view;
+        return R.layout.android_pick_view_activity;
     }
 
     @Override

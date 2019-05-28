@@ -15,7 +15,7 @@ public class DialogActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_dialog;
+        return R.layout.dialog_activity;
     }
 
     @Override

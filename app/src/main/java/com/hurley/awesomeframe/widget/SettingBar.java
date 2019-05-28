@@ -40,7 +40,7 @@ public class SettingBar extends FrameLayout {
     public SettingBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
 
-        LayoutInflater.from(context).inflate(R.layout.layout_setting_bar, this);
+        LayoutInflater.from(context).inflate(R.layout.setting_bar_layout, this);
         mLeftView = (TextView) findViewById(R.id.tv_setting_bar_left);
         mRightView = (TextView) findViewById(R.id.tv_setting_bar_right);
         mLineView = (View) findViewById(R.id.v_setting_bar_line);

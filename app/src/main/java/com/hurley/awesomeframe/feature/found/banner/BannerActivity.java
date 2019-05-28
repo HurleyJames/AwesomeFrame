@@ -15,7 +15,7 @@ public class BannerActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_banner;
+        return R.layout.banner_activity;
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.hurley.awesomeframe.feature.user.setting;
 
 import android.view.View;
+import android.widget.Button;
 
 import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
@@ -37,11 +38,11 @@ public class SettingActivity extends BaseActivity {
     @BindView(R.id.sb_auto_update)
     SettingBar mSbAutoUpdate;
     @BindView(R.id.btn_auto_update)
-    SettingBar mBtnAutoUpdate;
+    SwitchButton mBtnAutoUpdate;
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_setting;
+        return R.layout.setting_activity;
     }
 
     @Override
