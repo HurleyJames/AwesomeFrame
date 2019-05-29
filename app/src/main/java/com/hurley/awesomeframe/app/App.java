@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.blankj.utilcode.util.Utils;
 import com.hurley.awesomeframe.BuildConfig;
+import com.kobakei.ratethisapp.RateThisApp;
 import com.mikepenz.aboutlibraries.LibsConfiguration;
 
 import cn.bingoogolapple.swipebacklayout.BGASwipeBackHelper;
@@ -40,15 +41,19 @@ public class App extends Application {
          */
         BGASwipeBackHelper.init(application, null);
 
-        //初始化工具类
+        // 初始化工具类
         Utils.init(application);
 
-        //初始化Fragmentation
+        // 初始化Fragmentation
         Fragmentation.builder()
-                //BUBBLE：显示悬浮球 | SHAKE：摇一摇换出悬浮球 | NONE：隐藏悬浮球
+                // BUBBLE：显示悬浮球 | SHAKE：摇一摇换出悬浮球 | NONE：隐藏悬浮球
                 .stackViewMode(Fragmentation.NONE)
                 .debug(BuildConfig.DEBUG)
                 .install();
+
+        // 初始化评价
+        RateThisApp.Config config = new RateThisApp.Config(3, 5);
+        RateThisApp.init(config);
     }
 
 }

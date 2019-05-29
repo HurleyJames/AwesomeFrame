@@ -5,11 +5,6 @@ import android.widget.Button;
 
 import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
-import com.vondear.rxfeature.module.alipay.AliPayModel;
-import com.vondear.rxfeature.module.alipay.AliPayTool;
-import com.vondear.rxtool.RxTimeTool;
-import com.vondear.rxtool.interfaces.OnSuccessAndErrorListener;
-import com.vondear.rxtool.view.RxToast;
 
 import butterknife.BindView;
 import butterknife.OnClick;
