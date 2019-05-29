@@ -9,6 +9,10 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        manifestPlaceholders = [
+                // 替换成你的qq_id
+                qq_id: "188227193"
+        ]
     }
     buildTypes {
         release {

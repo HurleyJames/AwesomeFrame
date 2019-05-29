@@ -93,5 +93,7 @@
 
         <activity android:name=".feature.user.donate.RxToolPayActivity" />
 
+        <activity android:name=".feature.user.share.ShareActivity" />
+
     </application>
 </manifest>
