@@ -4,14 +4,12 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.blankj.utilcode.util.ToastUtils;
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.codemybrainsout.ratingdialog.RatingDialog;
 import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
 import com.hurley.awesomeframe.data.local.FrameBean;
 import com.hurley.awesomeframe.feature.found.adapter.FrameAdapter;
-import com.hurley.awesomeframe.feature.user.donate.AppPayActivity;
-import com.hurley.awesomeframe.feature.user.donate.RxToolPayActivity;
 import com.kobakei.ratethisapp.RateThisApp;
 
 import java.util.ArrayList;
@@ -67,7 +65,10 @@ public class RateActivity extends BaseActivity implements BaseQuickAdapter.OnIte
     public void onItemClick(BaseQuickAdapter adapter, View view, int position) {
         switch (position) {
             case 0:
-                setRate();
+                setRate1();
+                break;
+            case 1:
+                setRate2();
                 break;
             default:
                 break;
@@ -76,16 +77,22 @@ public class RateActivity extends BaseActivity implements BaseQuickAdapter.OnIte
 
     private List<FrameBean> setListData(List<FrameBean> list) {
         list.add(new FrameBean("Android-RateThisApp", "kobakei", "Android library to show \"Rate this app\" dialog"));
+        list.add(new FrameBean("smart-app-rate", "codemybrainsout", "An Android library that encourages users to rate the app on the Google Play."));
         return list;
     }
 
-    private void setRate() {
+    /**
+     * Android-RateThisApp
+     */
+    private void setRate1() {
         RateThisApp.onCreate(this);
         // 设置样式
         RateThisApp.Config config = new RateThisApp.Config();
         config.setTitle(R.string.rate_title);
         config.setMessage(R.string.rate_message);
         config.setYesButtonText(R.string.rate);
+        config.setNoButtonText(R.string.rate_no);
+        config.setCancelButtonText(R.string.rate_later);
         // 设置url
         config.setUrl("hurley.fun");
         RateThisApp.init(config);
@@ -107,5 +114,43 @@ public class RateActivity extends BaseActivity implements BaseQuickAdapter.OnIte
 
             }
         });
+    }
+
+    /**
+     * smart-app-rate
+     */
+    private void setRate2() {
+        final RatingDialog ratingDialog = new RatingDialog.Builder(this)
+//                .icon(drawable)
+//                .session(7)
+//                .threshold(3)
+                .title("How was your experience with us?")
+                .titleTextColor(R.color.black)
+                .positiveButtonText("Not Now")
+                .negativeButtonText("Never")
+                .positiveButtonTextColor(R.color.white)
+                .negativeButtonTextColor(R.color.grey_500)
+                .formTitle("Submit Feedback")
+                .formHint("Tell us where we can improve")
+                .formSubmitText("Submit")
+                .formCancelText("Cancel")
+                .ratingBarColor(R.color.yellow)
+                // 商店地址
+                .playstoreUrl("")
+                .onThresholdCleared((ratingDialog1, rating, thresholdCleared) -> {
+                    //do something
+                    ratingDialog1.dismiss();
+                })
+                .onThresholdFailed((ratingDialog2, rating, thresholdCleared) -> {
+                    //do something
+                    ratingDialog2.dismiss();
+                })
+                .onRatingChanged((rating, thresholdCleared) -> {
+
+                })
+                .onRatingBarFormSumbit(feedback -> {
+
+                }).build();
+        ratingDialog.show();
     }
 }

@@ -62,4 +62,6 @@
     <string name="android_rate">Android-RateThisApp</string>
     <string name="rate_title">请为AwesomeFrame评价</string>
     <string name="rate_message">如果你喜欢AwesomeFrame，请花一分钟不到的时间为AwesomeFrame打好评。谢谢你们的支持！</string>
+    <string name="rate_no">不用了，谢谢</string>
+    <string name="rate_later">稍后再说</string>
 </resources>
