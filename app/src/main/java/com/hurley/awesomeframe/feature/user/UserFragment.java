@@ -7,6 +7,7 @@ import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.fragment.BaseFragment;
 import com.hurley.awesomeframe.feature.user.about.AboutActivity;
 import com.hurley.awesomeframe.feature.user.donate.DonateActivity;
+import com.hurley.awesomeframe.feature.user.feedback.FeedbackActivity;
 import com.hurley.awesomeframe.feature.user.rate.RateActivity;
 import com.hurley.awesomeframe.feature.user.setting.SettingActivity;
 import com.hurley.awesomeframe.feature.user.share.ShareActivity;
@@ -81,6 +82,7 @@ public class UserFragment extends BaseFragment {
                 startActivity(SettingActivity.class);
                 break;
             case R.id.sb_feedback:
+                startActivity(FeedbackActivity.class);
                 break;
             case R.id.sb_share:
                 startActivity(ShareActivity.class);

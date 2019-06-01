@@ -98,5 +98,7 @@
         <activity android:name=".feature.user.rate.RateActivity" />
 
         <activity android:name=".feature.user.rate.AndroidRateActivity" />
+
+        <activity android:name=".feature.user.feedback.FeedbackActivity" />
     </application>
 </manifest>

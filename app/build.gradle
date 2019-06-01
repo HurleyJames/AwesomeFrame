@@ -107,4 +107,6 @@ dependencies {
     implementation 'io.github.kobakei:ratethisapp:1.2.0'
     // smart-app-rate包：https://github.com/codemybrainsout/smart-app-rate
     implementation 'com.codemybrainsout.rating:ratingdialog:1.0.8'
+    // shaky-android包：https://github.com/linkedin/shaky-android
+    implementation 'com.linkedin.shaky:shaky:1.2.0'
 }

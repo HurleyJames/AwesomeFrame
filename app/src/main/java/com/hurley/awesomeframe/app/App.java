@@ -1,11 +1,13 @@
 package com.hurley.awesomeframe.app;
 
 import android.app.Application;
+import android.support.annotation.NonNull;
 
 import com.blankj.utilcode.util.Utils;
 import com.hurley.awesomeframe.BuildConfig;
 import com.kobakei.ratethisapp.RateThisApp;
-import com.mikepenz.aboutlibraries.LibsConfiguration;
+import com.linkedin.android.shaky.EmailShakeDelegate;
+import com.linkedin.android.shaky.Shaky;
 
 import cn.bingoogolapple.swipebacklayout.BGASwipeBackHelper;
 import me.yokeyword.fragmentation.Fragmentation;
@@ -22,10 +24,14 @@ public class App extends Application {
 
     private static App instance;
 
+    private Shaky shaky;
+
     @Override
     public void onCreate() {
         super.onCreate();
         initSDK(this);
+        // 初始化反馈
+        shaky = Shaky.with(this, new EmailShakeDelegate("1401682479@qq.com"));
     }
 
     /**
@@ -54,6 +60,12 @@ public class App extends Application {
         // 初始化评价
         RateThisApp.Config config = new RateThisApp.Config(3, 5);
         RateThisApp.init(config);
+
+    }
+
+    @NonNull
+    public Shaky getShaky() {
+        return shaky;
     }
 
 }
