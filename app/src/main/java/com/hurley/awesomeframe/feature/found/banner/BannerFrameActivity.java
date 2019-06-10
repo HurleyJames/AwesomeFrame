@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import me.drakeet.support.about.provided.GlideImageLoader;
 
 /**
  * <pre>

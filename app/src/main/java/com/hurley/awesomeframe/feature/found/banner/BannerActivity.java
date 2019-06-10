@@ -61,6 +61,9 @@ public class BannerActivity extends BaseActivity implements BaseQuickAdapter.OnI
             case 0:
                 startActivity(BannerFrameActivity.class);
                 break;
+            case 1:
+                startActivity(BGABannerActivity.class);
+                break;
             default:
                 break;
         }
@@ -68,6 +71,7 @@ public class BannerActivity extends BaseActivity implements BaseQuickAdapter.OnI
 
     private List<FrameBean> setListData(List<FrameBean> list) {
         list.add(new FrameBean("banner", "youth5201314", "Android广告图片轮播控件，支持无限循环和多种主题，可以灵活设置轮播样式、动画、轮播和切换时间、位置、图片加载框架等！"));
+        list.add(new FrameBean("BGABanner-Android", "bingoogolapple", "引导界面滑动导航 + 大于等于1页时无限轮播 + 各种切换动画轮播效果"));
         return list;
     }
 }

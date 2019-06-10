@@ -31,7 +31,7 @@
 
     <!-- Banner -->
     <string name="banner">banner</string>
-    <string name="convenient_banner">ConvenientBanner</string>
+    <string name="banner_bga">BGABanner-Android</string>
 
     <!-- 用户页 -->
     <string name="about">关于</string>
