@@ -71,6 +71,8 @@
 
         <activity android:name=".feature.found.banner.BannerActivity" />
 
+        <activity android:name=".feature.found.banner.BannerFrameActivity" />
+
         <activity android:name=".feature.found.tab.TabActivity" />
 
         <activity android:name=".feature.user.login.LoginActivity" />

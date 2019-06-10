@@ -29,6 +29,10 @@
     <!-- Refresh -->
     <string name="refresh_smart_refresh">SmartRefreshLayout</string>
 
+    <!-- Banner -->
+    <string name="banner">banner</string>
+    <string name="convenient_banner">ConvenientBanner</string>
+
     <!-- 用户页 -->
     <string name="about">关于</string>
     <string name="setting">设置</string>

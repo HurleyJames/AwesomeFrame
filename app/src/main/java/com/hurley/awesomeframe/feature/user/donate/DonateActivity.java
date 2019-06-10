@@ -28,10 +28,6 @@ public class DonateActivity extends BaseActivity implements BaseQuickAdapter.OnI
     @BindView(R.id.rv_donate)
     RecyclerView mRvDonate;
 
-    private FrameAdapter mAdapter;
-
-    private List<FrameBean> mList;
-
     @Override
     protected int getLayoutId() {
         return R.layout.donate_activity;
@@ -49,8 +45,8 @@ public class DonateActivity extends BaseActivity implements BaseQuickAdapter.OnI
 
     @Override
     protected void initEventAndData() {
-        mList = new ArrayList<>();
-        mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
+        List<FrameBean> mList = new ArrayList<>();
+        FrameAdapter mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
         mRvDonate.setAdapter(mAdapter);
         mAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         mAdapter.isFirstOnly(false);

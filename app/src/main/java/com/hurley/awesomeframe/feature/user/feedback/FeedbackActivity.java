@@ -29,10 +29,6 @@ public class FeedbackActivity extends BaseActivity implements BaseQuickAdapter.O
     @BindView(R.id.rv_feedback)
     RecyclerView mRvFeedback;
 
-    private FrameAdapter mAdapter;
-
-    private List<FrameBean> mList;
-
     @Override
     protected int getLayoutId() {
         return R.layout.feedback_activity;
@@ -50,8 +46,8 @@ public class FeedbackActivity extends BaseActivity implements BaseQuickAdapter.O
 
     @Override
     protected void initEventAndData() {
-        mList = new ArrayList<>();
-        mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
+        List<FrameBean> mList = new ArrayList<>();
+        FrameAdapter mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
         mRvFeedback.setAdapter(mAdapter);
         mAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         mAdapter.isFirstOnly(false);

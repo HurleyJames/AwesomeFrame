@@ -9,7 +9,6 @@ import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
 import com.hurley.awesomeframe.data.local.FrameBean;
 import com.hurley.awesomeframe.feature.found.adapter.FrameAdapter;
-import com.hurley.awesomeframe.feature.found.pick.CityPickerActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,10 +28,6 @@ public class RefreshActivity extends BaseActivity implements BaseQuickAdapter.On
     @BindView(R.id.rv_refresh)
     RecyclerView mRvRefresh;
 
-    private FrameAdapter mAdapter;
-
-    private List<FrameBean> mList;
-
     @Override
     protected int getLayoutId() {
         return R.layout.refresh_activity;
@@ -50,8 +45,8 @@ public class RefreshActivity extends BaseActivity implements BaseQuickAdapter.On
 
     @Override
     protected void initEventAndData() {
-        mList = new ArrayList<>();
-        mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
+        List<FrameBean> mList = new ArrayList<>();
+        FrameAdapter mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
         mRvRefresh.setAdapter(mAdapter);
         mAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         mAdapter.isFirstOnly(false);
@@ -65,9 +60,6 @@ public class RefreshActivity extends BaseActivity implements BaseQuickAdapter.On
             case 0:
                 startActivity(SmartRefreshLayoutActivity.class);
                 break;
-            case 1:
-                startActivity(CityPickerActivity.class);
-                break;
             default:
                 break;
         }
@@ -75,7 +67,6 @@ public class RefreshActivity extends BaseActivity implements BaseQuickAdapter.On
 
     private List<FrameBean> setListData(List<FrameBean> list) {
         list.add(new FrameBean("SmartRefreshLayout", "scwang90", "\uD83D\uDD25下拉刷新、上拉加载、二级刷新、淘宝二楼、RefreshLayout、OverScroll，Android智能下拉刷新框架，支持越界回弹、越界拖动，具有极强的扩展性，集成了几十种炫酷的Header和 Footer。"));
-        list.add(new FrameBean("CityPicker", "zaaach", "城市选择、定位、搜索及右侧字母导航，类似美团 百度糯米 饿了么等APP选择城市功能"));
         return list;
     }
 }

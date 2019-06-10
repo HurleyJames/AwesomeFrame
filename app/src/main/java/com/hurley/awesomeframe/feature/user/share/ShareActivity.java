@@ -28,10 +28,6 @@ public class ShareActivity extends BaseActivity implements BaseQuickAdapter.OnIt
     @BindView(R.id.rv_share)
     RecyclerView mRvShare;
 
-    private FrameAdapter mAdapter;
-
-    private List<FrameBean> mList;
-
     @Override
     protected int getLayoutId() {
         return R.layout.share_activity;
@@ -49,8 +45,8 @@ public class ShareActivity extends BaseActivity implements BaseQuickAdapter.OnIt
 
     @Override
     protected void initEventAndData() {
-        mList = new ArrayList<>();
-        mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
+        List<FrameBean> mList = new ArrayList<>();
+        FrameAdapter mAdapter = new FrameAdapter(R.layout.frame_recycle_item, mList);
         mRvShare.setAdapter(mAdapter);
         mAdapter.openLoadAnimation(BaseQuickAdapter.ALPHAIN);
         mAdapter.isFirstOnly(false);

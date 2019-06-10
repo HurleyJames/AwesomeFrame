@@ -4,6 +4,7 @@ import android.app.Application;
 import android.support.annotation.NonNull;
 
 import com.blankj.utilcode.util.Utils;
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.hurley.awesomeframe.BuildConfig;
 import com.kobakei.ratethisapp.RateThisApp;
 import com.linkedin.android.shaky.EmailShakeDelegate;
@@ -30,6 +31,8 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         initSDK(this);
+        // 初始化 Fresco
+        Fresco.initialize(this);
         // 初始化反馈
         shaky = Shaky.with(this, new EmailShakeDelegate("1401682479@qq.com"));
     }
