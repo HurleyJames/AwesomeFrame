@@ -39,7 +39,7 @@ public class AppPayActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.app_pay_activity;
+        return R.layout.donate_app_pay_activity;
     }
 
     @Override

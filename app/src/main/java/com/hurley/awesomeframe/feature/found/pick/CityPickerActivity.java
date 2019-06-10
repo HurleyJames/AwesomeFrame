@@ -38,7 +38,7 @@ public class CityPickerActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.city_picker_activity;
+        return R.layout.pick_city_picker_activity;
     }
 
     @Override

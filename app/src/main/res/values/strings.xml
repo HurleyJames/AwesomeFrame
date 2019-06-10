@@ -56,14 +56,14 @@
     <string name="language">多语言</string>
 
     <!-- 捐赠 -->
-    <string name="app_pay">AppPay</string>
-    <string name="rxtool_pay">RxToolPay</string>
+    <string name="pay_app_pay">AppPay</string>
+    <string name="pay_rxtool_pay">RxToolPay</string>
     <string name="pay_success">支付成功</string>
     <string name="pay_error">支付错误</string>
     <string name="pay_cancel">用户取消</string>
 
     <!-- 评价 -->
-    <string name="android_rate">Android-RateThisApp</string>
+    <string name="rate_android_rate">Android-RateThisApp</string>
     <string name="rate_title">请为AwesomeFrame评价</string>
     <string name="rate_message">如果你喜欢AwesomeFrame，请花一分钟不到的时间为AwesomeFrame打好评。谢谢你们的支持！</string>
     <string name="rate_no">不用了，谢谢</string>

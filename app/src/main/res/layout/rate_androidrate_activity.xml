@@ -10,5 +10,5 @@
         android:id="@+id/tb_rate_androidrate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:title="@string/android_rate" />
+        app:title="@string/rate_android_rate" />
 </LinearLayout>

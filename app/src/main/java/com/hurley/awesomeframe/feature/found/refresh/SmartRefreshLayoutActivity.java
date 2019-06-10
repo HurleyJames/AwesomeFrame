@@ -72,7 +72,7 @@ public class SmartRefreshLayoutActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.smart_refresh_activity;
+        return R.layout.refresh_smart_refresh_activity;
     }
 
     @Override
