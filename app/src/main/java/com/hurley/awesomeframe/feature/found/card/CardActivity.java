@@ -62,6 +62,8 @@ public class CardActivity extends BaseActivity implements BaseQuickAdapter.OnIte
             case 0:
                 startActivity(FoldingCellActivity.class);
                 break;
+            case 1:
+                startActivity(SwipeStackActivity.class);
             default:
                 break;
         }
@@ -69,6 +71,7 @@ public class CardActivity extends BaseActivity implements BaseQuickAdapter.OnIte
 
     private List<FrameBean> setListData(List<FrameBean> list) {
         list.add(new FrameBean("folding-cell-android", "Ramotion", "FoldingCell is a material design expanding content cell inspired by folding paper material made by @Ramotion"));
+        list.add(new FrameBean("SwipeStack", "flschweiger", "A simple, customizable and easy to use swipeable view stack for Android."));
         return list;
     }
 }

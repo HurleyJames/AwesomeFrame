@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.found.card.SwipeStackActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_swipe_stack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/card_swipe_stack" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <link.fls.swipestack.SwipeStack
+            android:id="@+id/swipeStack"
+            android:layout_width="@dimen/space_600"
+            android:layout_height="@dimen/space_800"
+            android:padding="@dimen/space_60"
+            android:layout_gravity="center_horizontal"
+            app:stack_rotation="10"
+            app:stack_size="3"/>
+    </FrameLayout>
+
+</LinearLayout>

@@ -24,6 +24,7 @@
 
     <!-- Card -->
     <string name="card_folding_cell">folding-cell-android</string>
+    <string name="card_swipe_stack">SwipeStack</string>
 
     <!-- Dialog -->
     <string name="dialog_rxtool_dialog">RxToolDialog</string>

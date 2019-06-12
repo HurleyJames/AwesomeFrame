@@ -94,6 +94,8 @@ dependencies {
     // Frame
     // folding-cell-android包：https://github.com/Ramotion/folding-cell-android
     implementation 'com.ramotion.foldingcell:folding-cell:1.2.2'
+    // SwipeStack包：https://github.com/flschweiger/SwipeStack
+    implementation 'link.fls:swipestack:0.3.0'
     // sweet-alert-dialog包：https://github.com/pedant/sweet-alert-dialog
     implementation 'com.github.f0ris.sweetalert:library:1.5.1'
     // Android-PickerView包：https://github.com/Bigkoo/Android-PickerView
