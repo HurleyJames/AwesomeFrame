@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.found.card.FoldingCellActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/card_folding_cell" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_60"
+        android:layout_marginEnd="@dimen/space_60"
+        android:layout_marginBottom="@dimen/space_60"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_instant"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="Toggle instantly" />
+
+        <Button
+            android:id="@+id/btn_animation"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="Toggle with animation" />
+    </LinearLayout>
+
+    <com.ramotion.foldingcell.FoldingCell
+        android:id="@+id/folding_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_60"
+        android:layout_marginEnd="@dimen/space_60">
+
+        <FrameLayout
+            android:id="@+id/cell_content_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_500"
+                android:background="@android:color/holo_green_dark"
+                android:gravity="center"
+                android:text="内容" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/cell_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_200"
+                android:background="@android:color/holo_blue_dark"
+                android:gravity="center"
+                android:text="标题" />
+        </FrameLayout>
+    </com.ramotion.foldingcell.FoldingCell>
+</LinearLayout>

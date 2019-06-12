@@ -22,6 +22,9 @@
     <string name="found_popup">Popup</string>
     <string name="found_banner">Banner</string>
 
+    <!-- Card -->
+    <string name="card_folding_cell">folding-cell-android</string>
+
     <!-- Dialog -->
     <string name="dialog_rxtool_dialog">RxToolDialog</string>
     <string name="dialog_sweet_alert">SweetAlertDialog</string>

@@ -68,6 +68,8 @@
 
         <activity android:name=".feature.found.card.CardActivity" />
 
+        <activity android:name=".feature.found.card.FoldingCellActivity" />
+
         <activity android:name=".feature.found.dialog.DialogActivity" />
 
         <activity android:name=".feature.found.dialog.RxToolDialogActivity" />

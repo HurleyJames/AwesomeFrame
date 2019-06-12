@@ -9,8 +9,6 @@ import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
 import com.hurley.awesomeframe.data.local.FrameBean;
 import com.hurley.awesomeframe.feature.found.adapter.FrameAdapter;
-import com.hurley.awesomeframe.feature.found.banner.BGABannerActivity;
-import com.hurley.awesomeframe.feature.found.banner.BannerFrameActivity;
 
 import java.util.ArrayList;
 import java.util.List;
