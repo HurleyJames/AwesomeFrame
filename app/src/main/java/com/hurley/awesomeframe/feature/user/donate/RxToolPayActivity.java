@@ -26,7 +26,7 @@ public class RxToolPayActivity extends BaseActivity {
 
     @Override
     protected int getLayoutId() {
-        return R.layout.donate_rxtool_pay_activity;
+        return R.layout.donate_rxtool_activity;
     }
 
     @Override

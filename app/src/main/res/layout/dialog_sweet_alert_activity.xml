@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".feature.found.dialog.SweetAlertDialogActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_sweet_alert_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="@string/dialog_sweet_alert" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/space_60"
+        android:layout_marginEnd="@dimen/space_60"
+        android:layout_marginBottom="@dimen/space_60"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_material"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="显示Material进度样式" />
+
+        <Button
+            android:id="@+id/btn_title"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="只显示标题" />
+
+        <Button
+            android:id="@+id/btn_title_content"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="显示标题和内容" />
+
+        <Button
+            android:id="@+id/btn_error"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="显示异常样式" />
+
+        <Button
+            android:id="@+id/btn_warning"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="显示警告样式" />
+
+
+        <Button
+            android:id="@+id/btn_success"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="显示成功完成样式" />
+
+        <Button
+            android:id="@+id/btn_header_image"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="自定义头部图像" />
+
+        <Button
+            android:id="@+id/btn_change"
+            style="@style/ButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_60"
+            android:text="切换对话框" />
+    </LinearLayout>
+</LinearLayout>

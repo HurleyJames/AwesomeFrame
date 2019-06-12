@@ -92,6 +92,8 @@ dependencies {
     implementation "com.github.vondear.RxTool:RxArcGisKit:2.3.9"
 
     // Frame
+    // sweet-alert-dialog包：https://github.com/pedant/sweet-alert-dialog
+    implementation 'com.github.f0ris.sweetalert:library:1.5.1'
     // Android-PickerView包：https://github.com/Bigkoo/Android-PickerView
     implementation 'com.contrarywind:Android-PickerView:4.1.8'
     // CityPicker包：https://github.com/zaaach/CityPicker

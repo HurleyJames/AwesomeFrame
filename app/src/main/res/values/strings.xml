@@ -22,6 +22,10 @@
     <string name="found_popup">Popup</string>
     <string name="found_banner">Banner</string>
 
+    <!-- Dialog -->
+    <string name="dialog_rxtool_dialog">RxToolDialog</string>
+    <string name="dialog_sweet_alert">SweetAlertDialog</string>
+
     <!-- Pick -->
     <string name="pick_android_pick_view">Android-PickerView</string>
     <string name="pick_city_pick">CityPicker</string>
