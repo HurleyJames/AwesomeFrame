@@ -9,8 +9,6 @@ import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
 import com.hurley.awesomeframe.data.local.FrameBean;
 import com.hurley.awesomeframe.feature.found.adapter.FrameAdapter;
-import com.hurley.awesomeframe.feature.found.dialog.RxToolDialogActivity;
-import com.hurley.awesomeframe.feature.found.dialog.SweetAlertDialogActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -64,6 +62,7 @@ public class CardActivity extends BaseActivity implements BaseQuickAdapter.OnIte
                 break;
             case 1:
                 startActivity(SwipeStackActivity.class);
+                break;
             default:
                 break;
         }
