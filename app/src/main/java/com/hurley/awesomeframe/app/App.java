@@ -7,11 +7,14 @@ import com.blankj.utilcode.util.Utils;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.hurley.awesomeframe.BuildConfig;
 import com.kobakei.ratethisapp.RateThisApp;
+import com.kongzue.dialog.util.DialogSettings;
 import com.linkedin.android.shaky.EmailShakeDelegate;
 import com.linkedin.android.shaky.Shaky;
 
 import cn.bingoogolapple.swipebacklayout.BGASwipeBackHelper;
 import me.yokeyword.fragmentation.Fragmentation;
+
+import static com.kongzue.dialog.util.DialogSettings.STYLE.STYLE_IOS;
 
 /**
  * <pre>
@@ -64,6 +67,9 @@ public class App extends Application {
         RateThisApp.Config config = new RateThisApp.Config(3, 5);
         RateThisApp.init(config);
 
+        //初始化全局Dialog风格样式
+        DialogSettings.style = STYLE_IOS;
+        DialogSettings.isUseBlur = true;
     }
 
     @NonNull

@@ -34,9 +34,8 @@
         </provider>
 
         <!-- 启动页面（因为使用了LauncherTheme，所以不要给这个Activity设置screenOrientation属性，会导致崩溃） -->
-        <activity android:name=".feature.main.MainActivity">
-            <!--android:name=".ui.activity.LauncherActivity"-->
-            <!--android:theme="@style/LauncherTheme"-->
+        <activity android:name=".feature.main.SplashActivity"
+            android:theme="@style/SplashTheme">
 
             <!-- 程序入口 -->
             <intent-filter>
@@ -45,8 +44,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+
+        <activity android:name=".feature.main.MainActivity"
+            android:alwaysRetainTaskState="true"
+            android:launchMode="singleTop" />
 
         <activity android:name=".feature.found.pick.PickActivity" />
 

@@ -7,6 +7,10 @@ import com.hurley.awesomeframe.R;
 import com.hurley.awesomeframe.base.activity.BaseActivity;
 import com.hurley.awesomeframe.widget.SettingBar;
 import com.hurley.awesomeframe.widget.SwitchButton;
+import com.kongzue.dialog.v3.BottomMenu;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.OnClick;
@@ -40,6 +44,11 @@ public class SettingActivity extends BaseActivity {
     @BindView(R.id.btn_auto_update)
     SwitchButton mBtnAutoUpdate;
 
+    /**
+     * 语言种类
+     */
+    List<String> languageList = new ArrayList<>();
+
     @Override
     protected int getLayoutId() {
         return R.layout.setting_activity;
@@ -57,7 +66,10 @@ public class SettingActivity extends BaseActivity {
 
     @Override
     protected void initEventAndData() {
-
+        languageList.add(getString(R.string.language_auto));
+        languageList.add(getString(R.string.language_simplified));
+        languageList.add(getString(R.string.language_traditional));
+        languageList.add(getString(R.string.language_english));
     }
 
     @OnClick({R.id.sb_auto_cache, R.id.sb_clear_cache, R.id.sb_auto_update,  R.id.sb_language, R.id.sb_night, R.id.sb_theme})
@@ -70,6 +82,12 @@ public class SettingActivity extends BaseActivity {
             case R.id.sb_auto_update:
                 break;
             case R.id.sb_language:
+                //多语言
+                BottomMenu.show(this, languageList, (text, index) -> {
+                    mSbLanguage.setRightText(text);
+                    //TODO 切换语言
+                    //TODO 首选项储存选择
+                });
                 break;
             case R.id.sb_night:
                 break;

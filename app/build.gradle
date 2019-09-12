@@ -13,6 +13,9 @@ android {
                 // 替换成你的qq_id
                 qq_id: "188227193"
         ]
+        // 开启渲染模式支持
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {
@@ -67,6 +70,8 @@ dependencies {
     implementation 'cn.bingoogolapple:bga-swipebacklayout:1.2.0'
     // 适配器包：https://github.com/CymChad/BaseRecyclerViewAdapterHelper
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.45'
+    // FancyView包：
+    implementation 'site.gemus:openingstartanimation:1.0.0'
 
     // 图片
 
@@ -98,11 +103,13 @@ dependencies {
     implementation 'link.fls:swipestack:0.3.0'
     // sweet-alert-dialog包：https://github.com/pedant/sweet-alert-dialog
     implementation 'com.github.f0ris.sweetalert:library:1.5.1'
+    // DialogV3：
+    implementation 'com.kongzue.dialog_v3:dialog:3.1.1'
     // Android-PickerView包：https://github.com/Bigkoo/Android-PickerView
     implementation 'com.contrarywind:Android-PickerView:4.1.8'
     // CityPicker包：https://github.com/zaaach/CityPicker
     implementation 'com.zaaach:citypicker:2.0.3'
-    // SmartRefreshLayout包：
+    // SmartRefreshLayout包：https://github.com/kongzue/DialogV3
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-25'
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-25'
     // banner包：https://github.com/youth5201314/banner
