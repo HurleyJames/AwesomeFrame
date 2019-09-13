@@ -38,7 +38,7 @@ public class AboutPageActivity extends AbsAboutActivity {
 
     @Override
     protected void onCreateHeader(@NonNull ImageView icon, @NonNull TextView slogan, @NonNull TextView version) {
-        icon.setImageResource(R.mipmap.ic_launcher);
+        icon.setImageResource(R.mipmap.ic_logo);
         slogan.setText(getString(R.string.app_name));
         version.setText("v" + BuildConfig.VERSION_NAME);
     }
@@ -49,7 +49,7 @@ public class AboutPageActivity extends AbsAboutActivity {
         items.add(new Card(getString(R.string.app_desc)));
 
         items.add(new Category("开发者"));
-        items.add(new Contributor(R.mipmap.ic_launcher, "Hurley", "Junior", "hurley.fun"));
+        items.add(new Contributor(R.mipmap.ic_logo, "Hurley", "Junior", "hurley.fun"));
 
         items.add(new Category("开源协议"));
         items.add(new License("about-page", "drakeet", License.APACHE_2, "https://github.com/drakeet/about-page"));
@@ -74,6 +74,9 @@ public class AboutPageActivity extends AbsAboutActivity {
                 AppCompatDelegate.setDefaultNightMode(MODE_NIGHT_NO);
             }
             getDelegate().applyDayNight();
+        } else if (menuItem.getItemId() == android.R.id.home) {
+            // 如果点击返回键，返回上一页面
+            this.finish();
         }
         return true;
     }

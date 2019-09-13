@@ -25,6 +25,12 @@
     <!-- Card -->
     <string name="card_folding_cell">folding-cell-android</string>
     <string name="card_swipe_stack">SwipeStack</string>
+    <string name="card_stack">CardStack</string>
+    <string name="card_menu_all_down">All down</string>
+    <string name="card_menu_up_down">Up down</string>
+    <string name="card_menu_up_down_stack">Up down stack</string>
+    <string name="card_pre">上一张</string>
+    <string name="card_next">下一张</string>
 
     <!-- Dialog -->
     <string name="dialog_rxtool_dialog">RxToolDialog</string>

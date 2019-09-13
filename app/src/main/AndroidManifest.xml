@@ -74,6 +74,8 @@
 
         <activity android:name=".feature.found.card.SwipeStackActivity" />
 
+        <activity android:name=".feature.found.card.CardStackActivity" />
+
         <activity android:name=".feature.found.dialog.DialogActivity" />
 
         <activity android:name=".feature.found.dialog.RxToolDialogActivity" />
@@ -115,5 +117,7 @@
         <activity android:name=".feature.user.rate.AndroidRateActivity" />
 
         <activity android:name=".feature.user.feedback.FeedbackActivity" />
+
+
     </application>
 </manifest>

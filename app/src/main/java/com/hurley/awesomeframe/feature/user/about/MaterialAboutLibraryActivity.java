@@ -35,7 +35,7 @@ public class MaterialAboutLibraryActivity extends MaterialAboutActivity {
         appCard.addItem(new MaterialAboutTitleItem.Builder()
                 .text(getString(R.string.app_name))
                 .desc(getString(R.string.app_desc))
-                .icon(R.mipmap.ic_launcher)
+                .icon(R.mipmap.ic_logo)
                 .build());
 
         // 版本

@@ -20,6 +20,9 @@
     <color name="settingBarSelectorColor">#0c000000</color>
     <color name="settingBarBackgroundColor">#FFFFFFFF</color>
 
+    <!-- aboutLibrary导航栏颜色 -->
+    <color name="aboutLibraryToolbar">#FCFCFC</color>
+
     <!-- 透明 -->
     <color name="transparent">#00000000</color>
 

@@ -70,7 +70,7 @@ dependencies {
     implementation 'cn.bingoogolapple:bga-swipebacklayout:1.2.0'
     // 适配器包：https://github.com/CymChad/BaseRecyclerViewAdapterHelper
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.45'
-    // FancyView包：
+    // FancyView包：https://github.com/wongzy/FancyView
     implementation 'site.gemus:openingstartanimation:1.0.0'
 
     // 图片
