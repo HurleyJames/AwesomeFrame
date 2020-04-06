@@ -1,23 +1,26 @@
 # AwesomeFrame
-![](https://img.shields.io/badge/dynamic/json?color=%231D1B1B&label=Github&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dgithub%26queryKey%3DHurleyJames) ![](https://img.shields.io/badge/dynamic/json?color=%232093DC&label=Twitter&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dtwitter%26queryKey%3DHurleyHuang23) ![](https://img.shields.io/badge/dynamic/json?color=%233FA4DA&label=Telegram&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dtelegram%26queryKey%3DHurleyJames) ![](https://img.shields.io/badge/dynamic/json?color=%23E79437&label=微博&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dweibo%26queryKey%3D5628559861) ![](https://img.shields.io/badge/dynamic/json?color=%23097BE9&label=知乎&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dzhihu%26queryKey%3Dhuang-peng-yuan-91) ![](https://img.shields.io/badge/dynamic/json?color=%23199C59&label=酷安&query=%24.data.totalSubs&url=https%3A%2F%2Fapi.spencerwoo.com%2Fsubstats%2F%3Fsource%3Dcoolapk%26queryKey%3D795519)  
+
+![](https://img.shields.io/badge/platform-Android-3ddc84?logo=Android&logoColor=white)
+![](https://img.shields.io/badge/build-passing-42be1b?logoColor=white)
+
 AwesomeFrame是一款聚集了目前安卓开发中常用的流行UI框架的应用
 
 目前已完成的框架：  
 * Card
-	- floding-cell-android
-	- SwipeStack（待改进）
+	- [folding-cell-android](https://github.com/Ramotion/folding-cell-android)
+	- [SwipeStack](https://github.com/sathishmscict/SwipeStack)（待改进）
 * Dialog
-	- RxTool（待完成）
-	- sweet-alert-dialog（第一项待改进）
+	- [RxTool](https://github.com/Tamsiree/RxTool)（待完成）
+	- [sweet-alert-dialog](https://github.com/pedant/sweet-alert-dialog)（第一项待改进）
 * Pick
-	- Android-PickerView
-	- CityPicker  
+	- [Android-PickerView](https://github.com/Bigkoo/Android-PickerView)
+	- [CityPicker](https://github.com/zaaach/CityPicker)
 * Refresh
-	- SmartRefreshLayout  
+	- [SmartRefreshLayout](https://github.com/scwang90/SmartRefreshLayout)
 * Banner
-	- banner
-	- BGABanner-Android
+	- [banner](https://github.com/youth5201314/banner)
+	- [BGABanner-Android](https://github.com/bingoogolapple/BGABanner-Android)
 * About
-	- about-page
-	- material-about-library
-	- AboutLibraries
+	- [about-page](https://github.com/PureWriter/about-page)
+	- [material-about-library](https://github.com/daniel-stoneuk/material-about-library)
+	- [AboutLibraries](https://github.com/mikepenz/AboutLibraries)
